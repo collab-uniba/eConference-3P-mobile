@@ -1,0 +1,274 @@
+.chat-area ul {
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.chat-area ul li {
+  list-style: none;
+  font-weight: normal;
+  margin: 0 10px 7px;
+}
+
+.chat-logs div {
+  position: relative;
+  -moz-box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+.chat-logs div input {
+  background: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  border: none;
+  padding: 10px 0 10px 6px;
+  line-height: 1;
+  color: gray;
+  width: 80%;
+}
+.chat-logs div input.focus {
+  color: #000;
+}
+.chat-logs div button {
+  position: absolute;
+  left: auto;
+  top: 5px;
+  right: 5px;
+}
+
+.chat-area .chat-leave {
+  display: none;
+}
+.chat-area.muc .chat-leave {
+  display: block;
+}
+.chat-area .join {
+  color: green;
+}
+.chat-area .leave {
+  color: red;
+}
+.chat-area .info {
+  color: blue;
+}
+
+.chat-area nav {
+  background: #eee;
+  height: 45px;
+  padding-top: 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+.chat-area nav {
+  display: none;
+}
+.chat-area nav span {
+  float: left;
+  width: 22.5%;
+  height: 45px;
+  border: solid 1px #eee;
+  border-bottom: none;
+  cursor: pointer;
+}
+.chat-area .chat-show-messages {
+  margin-left: 5%;
+  background: url(/img/messages.png) center center no-repeat;
+}
+.chat-area .chat-show-users {
+  background: url(/img/users.png) center center no-repeat;
+}
+.chat-area .chat-show-stories {
+  background: url(/img/stories.png) center center no-repeat;
+}
+.chat-area .chat-show-deck {
+  background: url(/img/deck.png) center center no-repeat;
+}
+.chat-area nav span.active {
+  background-color: white !important;
+  border: solid 1px #CCC;
+  border-bottom: none;
+}
+
+.chat-users {
+  display: none;
+}
+.chat-users ul,
+.chat-stories ul,
+.chat-estimates ul {
+  padding: 0;
+  margin : 0;
+}
+.chat-users ul li,
+.chat-stories ul li {
+  cursor: pointer;
+}
+.chat-users ul li,
+.chat-stories ul li,
+.chat-estimates ul li {
+  position: relative;
+  margin: 0;
+  padding: 15px 0 15px 15px;
+  border-bottom: 1px solid #CCC;
+}
+.chat-users ul li small,
+.chat-stories ul li small {
+  display: block;
+  color: #666;
+}
+
+.chat-estimates ul li span {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: right;
+}
+
+
+
+.chat-stories {
+  display: none;
+}
+.chat-current-story {
+  display: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+  cursor: pointer;
+}
+.chat-stories h1 {
+  font-size: 22px;
+  margin: 15px 0 0 15px;
+  color: #001a99;
+}
+.chat-stories small {
+  color: #666;
+  margin-left: 15px;
+  font-size: 14px !important;
+  font-weight: normal;
+}
+.chat-stories textarea {
+  margin-top: 10px;
+}
+.chat-stories ul {
+  display: none;
+}
+.chat-stories ul small {
+  margin-left: 0;
+}
+
+.chat-stop-editing-stories {
+  display: none;
+}
+
+
+.chat-deck {
+  display: none;
+}
+.chat-deck-cards {
+  margin-top: 10px;
+}
+.chat-no-stories,
+.chat-deck-disabled,
+.chat-deck-forbidden {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  margin: 25px 0;
+}
+
+
+/*
+Per chiarezza definisco la visibilità di ciascun elemento del pannello delle
+stime in ogni situazione possibile, anche se ciò significa di fatto scrivere
+molte regole inutili.
+*/
+
+.chat-stories-actions { display: none; margin-top: 30px; }
+.moderator .chat-stories-actions { display: block; }
+
+
+.chat-deck-cards,
+.chat-deck-disabled,
+.chat-estimates,
+.chat-estimates-actions { display: none; }
+.chat-deck-forbidden { display: block; }
+
+.voter .chat-deck-forbidden,
+.voter .chat-deck-cards,
+.voter .chat-estimates,
+.voter .chat-estimates-actions { display: none; }
+.voter .chat-deck-disabled { display: block; }
+
+.voter.voting .chat-deck-forbidden,
+.voter.voting .chat-deck-disabled,
+.voter.voting .chat-estimates,
+.voter.voting .chat-estimates-actions { display: none; }
+.voter.voting .chat-deck-cards { display: block; }
+
+.voter.voted .chat-deck-forbidden,
+.voter.voted .chat-deck-disabled,
+.voter.voted .chat-deck-cards,
+.voter.voted .chat-estimates-actions { display: none; }
+.voter.voted .chat-estimates { display: block; }
+
+.moderator .chat-deck-forbidden,
+.moderator .chat-deck-cards,
+.moderator .chat-estimates,
+.moderator .chat-estimates-actions { display: none; }
+.moderator .chat-deck-disabled { display: block; }
+
+.moderator.voting .chat-deck-forbidden,
+.moderator.voting .chat-deck-disabled,
+.moderator.voting .chat-deck-cards { display: none; }
+.moderator.voting .chat-estimates,
+.moderator.voting .chat-estimates-actions { display: block; }
+
+.moderator.voted .chat-deck-forbidden,
+.moderator.voted .chat-deck-disabled,
+.moderator.voted .chat-deck-cards  { display: none; }
+.moderator.voted .chat-estimates,
+.moderator.voted .chat-estimates-actions { display: block; }
+
+
+.chat-deck-cards div {
+  background: url(/img/card1.png) 0 0 no-repeat;
+  width: 90px;
+  height: 85px;
+  border: solid 1px #555;
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 45px;
+  float: left;
+  margin: 5px 7px;
+  cursor: pointer;
+}
+.chat-deck div.active {
+  background-image: url(/img/card2.png);
+}
+
+.user-color0 {
+  color: #204a87;
+}
+
+.user-color1 {
+  color: #99138e;
+}
+
+.user-color2 {
+  color: #487d39;
+}
+
+.user-color3 {
+  color: #a31751;
+}
+
+.user-color4 {
+  color: #075d53;
+}

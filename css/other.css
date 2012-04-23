@@ -1,0 +1,25 @@
+#muc-setup-poker {
+  width: 120px;
+}
+
+#muc-setup-area .list li {
+  padding-left: 40px;
+}
+#muc-setup-area .list span {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  height: 21px;
+  width: 23px;
+  background: url('/img/unchecked.0.png') 0 0 no-repeat;
+}
+#muc-setup-area .list .checked span {
+  background: url('/img/checked.0.png') 0 0 no-repeat;
+}
+
+
+
+#occupant-voter,
+#occupant-scribe {
+  width: 60px;
+}

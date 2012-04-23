@@ -1,0 +1,87 @@
+.dialog {
+  background: rgba(0,0,0,.5);
+}
+.dialog div,
+#loading-dialog {
+  margin: 0 auto;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+
+  text-align: center;
+  color: white;
+
+  border: 1px solid #2A2A2A;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+
+  background: #000;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#666),to(#222));
+  background-image: -webkit-linear-gradient(#666,#222);
+  background-image: -moz-linear-gradient(#666,#222);
+  background-image: -ms-linear-gradient(#666,#222);
+  background-image: -o-linear-gradient(#666,#222);
+  background-image: linear-gradient(#666,#222);
+}
+
+.dialog div img,
+#loading-dialog img {
+  display: block;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+.dialog div small,
+#loading-dialog small {
+  display: block;
+  font-size: 13px;
+}
+
+#loading-dialog {
+  display: block;
+  margin: 15px auto 0;
+  width: 130px;
+  height: 80px;
+}
+
+
+
+/*
+.dialog div button {
+  width: 170px;
+  margin: auto;
+  margin-top: 15px;
+
+  border: 1px solid #222;
+  text-shadow: 0 -1px 1px black;
+  background: #333;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#555),to(#333));
+  background-image: -webkit-linear-gradient(#555,#333);
+  background-image: -moz-linear-gradient(#555,#333);
+  background-image: -ms-linear-gradient(#555,#333);
+  background-image: -o-linear-gradient(#555,#333);
+  background-image: linear-gradient(#555,#333);
+}
+.dialog div button:active {
+  background: #555;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#333),to(#555));
+  background-image: -webkit-linear-gradient(#333,#555);
+  background-image: -moz-linear-gradient(#333,#555);
+  background-image: -ms-linear-gradient(#333,#555);
+  background-image: -o-linear-gradient(#333,#555);
+  background-image: linear-gradient(#333,#555);
+}
+
+#connection-fail-dialog div,
+#auth-fail-dialog div {
+  height: 160px;
+}
+
+#error-dialog div {
+  height: 125px;
+}*/
