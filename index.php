@@ -1,6 +1,6 @@
 <!doctype html>
-<!--[if IEMobile 7 ]> <html class="no-js iem7" lang="it"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
+<!--[if IEMobile 7 ]> <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
   <?php require_once "$_SERVER[DOCUMENT_ROOT]/assets_functions.php" ?>
@@ -47,9 +47,9 @@
   <section id="login-area">
     <div class="form">
       <div>Jabber ID:<br>
-        <input type="email" value="ur1@jabber.org"></div>
+        <input type="email" value=""></div>
       <div>Password:<br>
-        <input type="password" value="pppppp"></div>
+        <input type="password" value=""></div>
       <div class="more-margin">
         <button>Connect</button>
       </div>
@@ -225,7 +225,7 @@
         <li class="info"><b>ur2</b> ha avviato la conferenza
         <li class="info"><b>ur2</b> ha deciso la storia da discutere:<br><i>Progettare il layout</i>
       */ ?></ul>
-      <div><input type="text" x-webkit-speech speech lang="it" value="type a message"><button class="chat-send">Send</button></div>
+      <div><input type="text" x-webkit-speech speech lang="en" value="type a message"><button class="chat-send">Send</button></div>
     </section>
 
     <section class="chat-users">
