@@ -41,6 +41,7 @@ Read the [How to use](https://github.com/giuseppe-silvano/eConference-3P-mobile/
 ## License
 
 The eConference 3P mobile source code is licensed under the MIT license, except for those components:
+* [HTML 5 Mobile Boilerplate](http://html5boilerplate.com/mobile): Public Domain
 * [jQuery](http://jquery.com/): MIT/GPL license
 * [minify](http://code.google.com/p/minify/): New BSD
 * [Normalize.css](http://necolas.github.com/normalize.css/): Public Domain
