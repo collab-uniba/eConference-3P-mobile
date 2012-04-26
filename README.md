@@ -21,7 +21,7 @@ eConference 3P mobile allows you to chat with your team via XMPP and participate
 
 ## Usage
 
-Read the [How to use](https://github.com/giuseppe-silvano/eConference-3P-mobile/wiki/How-to-use) wiki.
+Read the [How to use](https://github.com/collab-uniba/eConference-3P-mobile/wiki/How-to-use) wiki.
 
 
 ## Features
