@@ -13,7 +13,7 @@ eConference 3P mobile allows you to chat with your team via XMPP and participate
 
 ## Installation
 
-1. Clone the repository (`git clone git://github.com/h5bp/mobile-boilerplate.git`), or [download it](https://github.com/giuseppe-silvano/eConference-3P-mobile/zipball/master).
+1. Clone the repository (`git clone git://github.com/collab-uniba/eConference-3P-mobile.git`), or [download it](https://github.com/giuseppe-silvano/eConference-3P-mobile/zipball/master).
 2. put all the files in the root of your webserver
 3. update `/js/Com.Config.js` with the URL of your BOSH Connection Manager
 4. open your browser and navigate to your web server URL, everything should work!
